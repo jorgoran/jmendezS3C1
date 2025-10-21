@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jmendezS3C1.Vistas.vUno"
+             Title="vUno">
+    <VerticalStackLayout>
+        <Label 
+            Text="Vista Uno"
+            VerticalOptions="Center" 
+            FontSize="28"
+            HorizontalOptions="Center" />
+        <Button x:Name="btnTres"
+                Text="Registrate"
+                BackgroundColor="Green"
+                Clicked="btnRegistro_Clicked"/>
+        <Entry x:Name="txtUsuario"
+               Placeholder="Ingrese su Usuario"/>
+        <Entry x:Name="txtClave"
+               Placeholder="Ingrese su Clave"
+               IsPassword="True"
+               Keyboard="Numeric"/>
+        <Button x:Name="btnAbrir"
+                Text="Inicia Sesion"
+                Clicked="btnAbrir_clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

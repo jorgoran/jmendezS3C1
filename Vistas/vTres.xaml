@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jmendezS3C1.Vistas.vTres"
+             Title="vTres">
+    <VerticalStackLayout>
+        <Label 
+            Text="Vista Tres - Crear Usuario"
+            VerticalOptions="Center" 
+            FontSize="28"
+            HorizontalOptions="Center" />
+        <Entry x:Name="txtUsuario3"
+               Placeholder="Cree su Usuario"/>
+        <Entry x:Name="txtClave3"
+               Placeholder="Cree su Clave"
+               Keyboard="Numeric"/>
+        <Button x:Name="btnGuardar"
+                Text="Guardar"
+                Clicked="btnGuardar_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
