@@ -24,7 +24,7 @@ public partial class vUno : ContentPage
         {
 			string usuario = txtUsuario.Text;
 			string clave = txtClave.Text;
-                if (usuario == usuarioGlobal || clave == claveGlobal)
+                if (usuario == usuarioGlobal && clave == claveGlobal)
                 {
                 Navigation.PushAsync(new vDos(usuario, clave));
                 }

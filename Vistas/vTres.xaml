@@ -3,6 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jmendezS3C1.Vistas.vTres"
              Title="vTres">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="TextColor" Value="Blue"/>
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="TextColor" Value="Green"/>
+        </Style>
+    </ContentPage.Resources>
     <VerticalStackLayout>
         <Label 
             Text="Vista Tres - Crear Usuario"

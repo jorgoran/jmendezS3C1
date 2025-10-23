@@ -3,15 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jmendezS3C1.Vistas.vUno"
              Title="vUno">
+    <ContentPage.Resources>
+        <Style x:Key="estiloLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="TextColor" Value="Red"/>
+        </Style>
+        <Style x:Key="estiloButton" TargetType="Button">
+            <Setter Property="Background" Value="Green"/>
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+    </ContentPage.Resources>
+    
     <VerticalStackLayout>
         <Label 
+            Style="{StaticResource estiloLabel}"
             Text="Vista Uno"
             VerticalOptions="Center" 
             FontSize="28"
             HorizontalOptions="Center" />
-        <Button x:Name="btnTres"
+        <Button Style="{StaticResource estiloButton}"
+                x:Name="btnTres"
                 Text="Registrate"
-                BackgroundColor="Green"
                 Clicked="btnRegistro_Clicked"/>
         <Entry x:Name="txtUsuario"
                Placeholder="Ingrese su Usuario"/>

@@ -5,6 +5,7 @@
              Title="vDos">
     <VerticalStackLayout>
         <Label 
+            Style="{StaticResource LabelGlobal}"
             Text="Vista Dos"
             VerticalOptions="Center" 
             FontSize="28"
@@ -12,7 +13,7 @@
         <Button x:Name="btnAbrir1"
                 Text="Regresar a Ventana 1"
                 Clicked="btnAbrir1_Clicked"/>
-        <Label x:Name="lbldato1" TextColor="Red"></Label>
-        <Label x:Name="lbldato2" TextColor="Red"></Label>
+        <Label x:Name="lbldato1" Style="{StaticResource LabelGlobal}"></Label>
+        <Label x:Name="lbldato2" Style="{StaticResource LabelGlobal}"></Label>
     </VerticalStackLayout>
 </ContentPage>
